@@ -1,0 +1,42 @@
+{
+    "Calc body": {
+        "scope": "cpp",
+        "prefix": "calc",
+        "body": [
+            "calc($1, $2, '$0');"
+        ],
+        "description": "Makes calc function body"
+    },
+    "TEST body": {
+        "scope": "cpp",
+        "prefix": "test",
+        "body": [
+            "test($1, $2, '$3', $0);"
+        ],
+        "description": "Makes test function body"
+    },
+    "include <>": {
+        "scope": "cpp",
+        "prefix": "#<",
+        "body": [
+            "#include <$0>"
+        ],
+        "description": "Makes include<> body"
+    },
+    "include \"\"": {
+        "scope": "cpp",
+        "prefix": "#\"",
+        "body": [
+            "#include <$0>"
+        ],
+        "description": "Makes include\"\" body"
+    },
+    "to_string": {
+        "scope": "cpp",
+        "prefix": "tostr",
+        "body": [
+            "to_string($0)"
+        ],
+        "description": "Makes to_string()"
+    }
+}
